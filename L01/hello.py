@@ -4,7 +4,7 @@ print(msg)
 
 age = int(input("Your age> "))
 if age >= 18:
-    print("Your're old!!!")
+    print("You're old!!!")
 else:
     print("You're young!!!")
 
