@@ -24,11 +24,15 @@ personList.append(Person("Smudo", "Irgendwas", "5"))
 
 
 while programmRunning == True:
+    print()
+    print("+++++++++++++++++++++++++++++++++++++++++++++")
     print("Drücke A um alle Personen anzuzeigen")
     print("Drücke B um eine eine neue Person anzulegen")
     print("Drücke C um eine Person zu ändern")
     print("Drücke D um eine Person zu löschen")
     print("Drücke E um das Programm zu beenden")
+    print("+++++++++++++++++++++++++++++++++++++++++++++")
+    print()
     inputCases = input("Ihre Eingabe > ")
         
     if inputCases == "A":
@@ -40,6 +44,7 @@ while programmRunning == True:
         lastNameInput = input("Bitte Nachname eingeben > ")
         numberInput = input("Bitte Personalnummer eingeben > ")
         personList.append(Person(firstNameInput, lastNameInput, numberInput))
+        print()
 
     elif inputCases == "C":
         changePersonInput = input("Welche Person möchten sie verändern? > ")
