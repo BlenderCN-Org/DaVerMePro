@@ -18,6 +18,8 @@ for i in range(5):
     bpy.ops.transform.resize(value=(transforResizeX, transforResizeY, transforResizeZ), constraint_axis=(False, False, False))
     bpy.ops.transform.rotate(value=-0.475515, axis=(1, 0, 1), constraint_axis=(True, True, False))
 
+
+# +++ Old Code +++ 
 # Check veränderung
 
 # for i in range(5):
