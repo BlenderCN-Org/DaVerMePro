@@ -41,9 +41,9 @@ class MatrixExtrude(bpy.types.Operator):
 
     def execute(self, context):
         for i in range(self.extrusion_step):
-            bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(transformTranslateX , transformTranslateY, transformTranslateZ), "constraint_axis":(False, False, True), "constraint_orientation":'NORMAL'})
-            bpy.ops.transform.resize(value=(transforResizeX, transforResizeY, transforResizeZ), constraint_axis=(False, False, False))
-            bpy.ops.transform.rotate(value= transformRotate, axis=(1, 0, 1), constraint_axis=(True, True, False))
+            bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(self.transformTranslateX , self.transformTranslateY, self.transformTranslateZ), "constraint_axis":(False, False, True), "constraint_orientation":'NORMAL'})
+            bpy.ops.transform.resize(value=(self.transforResizeX, self.transforResizeY, self.transforResizeZ), constraint_axis=(False, False, False))
+            bpy.ops.transform.rotate(value= self.transformRotate, axis=(1, 0, 1), constraint_axis=(True, True, False))
 
         return {'FINISHED'}
 
